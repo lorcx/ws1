@@ -1,0 +1,30 @@
+ws
+ws1 为2个示例
+
+
+java中的ws规范有两种jax-ws 和 jax-rpc(过时了)
+
+
+
+简单的ws搭建与使用
+ 一、创建ws服务类  在类上加@WebService 注解 表示这个类为ws类，写endpoint并发布
+ 二、发布成功后，生成ws客户端代码
+    wsimport -p ws.client -keep http://localhost:8080/ws.WsServiceTest?wsdl
+    {-p :后边跟要生成的包名
+     -keep :后边是ws请求路径
+    }
+ 三、创建ws客户端并调用ws服务上的接口
+
+
+ 注意：ws的路径后边不是必须按照包名写的，写什么都行
+
+
+
+webService有两种消息传递方式：rpc、消息传递（document）（默认方式）（因为rpc不能通过scheme检验）
+webService概念：
+   1.soap
+   2.wsdl
+   3.uddi
+   4.rpc
+   5.xml
+webService=soap + wsdl + http

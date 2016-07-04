@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tt:书架 xmlns:tt="http://lx.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://lx.com demo1.xsd">
+    <tt:书>
+        <tt:书名>11</tt:书名>
+        <tt:作者>22</tt:作者>
+        <tt:售价>33</tt:售价>
+    </tt:书>
+</tt:书架>

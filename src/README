@@ -22,9 +22,11 @@ java中的ws规范有两种jax-ws 和 jax-rpc(过时了)
 
 webService有两种消息传递方式：rpc、消息传递（document）（默认方式）（因为rpc不能通过scheme检验）
 webService概念：
-   1.soap
-   2.wsdl
+   1.soap 简单对象访问协议 http+xml
+   2.wsdl webservice定义语言
    3.uddi
    4.rpc
    5.xml
 webService=soap + wsdl + http
+
+一个webservice对应唯一一个wsdl文档

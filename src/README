@@ -30,3 +30,19 @@ webService概念：
 webService=soap + wsdl + http
 
 一个webservice对应唯一一个wsdl文档
+
+java调用.net 需要将
+<s:element ref="s:schema" />
+<s:any />
+替换成<s:any minOccurs="2" maxOccurs="2"/>
+
+写webservice clicent代码从<wsdl:service name="WeatherWebService"> name属性开始写
+创建soap,并调用返回数据
+
+QName 表示 XML 规范中定义的限定名称
+QName 的值包含名称空间 URI、本地部分和前缀。
+
+
+生成的文件中：
+每个方法生成一个类，这个类里的属性就是方法的参数
+每个方法参数都有一个response对应的类

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2.4-b01. -->
+
+<!--
+    这个定义hello.wsdl 请求和响应的标签定义
+    xmlns:tns="http://ws/" 和 targetNamespace="http://ws/"   相同所以定义的是本标签
+
+    定义请求：<xs:element name="HelloWorld" type="tns:HelloWorld"></xs:element>
+    type="tns:HelloWorld" 对应  <xs:complexType name="HelloWorld"> 这个标签下
+
+    定义响应：<xs:element name="HelloWorldResponse" type="tns:HelloWorldResponse"></xs:element>
+     <xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+     相当于
+     <return>string</return>
+-->
+<xs:schema xmlns:tns="http://ws/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws/">
+    <xs:element name="HelloWorld" type="tns:HelloWorld"></xs:element>
+    <xs:element name="HelloWorldResponse" type="tns:HelloWorldResponse"></xs:element>
+    <xs:complexType name="HelloWorld">
+        <xs:sequence></xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="HelloWorldResponse">
+        <xs:sequence>
+            <xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

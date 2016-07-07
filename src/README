@@ -46,3 +46,8 @@ QName 的值包含名称空间 URI、本地部分和前缀。
 生成的文件中：
 每个方法生成一个类，这个类里的属性就是方法的参数
 每个方法参数都有一个response对应的类
+
+
+因此webservice发送流程
+客户端向服务器发送soap http+xml
+根据wsdl中定义的soap生成对应的soap xml片段

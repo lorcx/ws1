@@ -51,3 +51,8 @@ QName 的值包含名称空间 URI、本地部分和前缀。
 因此webservice发送流程
 客户端向服务器发送soap http+xml
 根据wsdl中定义的soap生成对应的soap xml片段
+
+
+用js 或jquery发送ajax请求webservice
+注意跨域问题
+请求的地址和传的地址要相同
